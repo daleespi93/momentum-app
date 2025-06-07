@@ -1,0 +1,385 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+ 
+/* Tags */
+body {
+  color: #fff;
+  font-family: 'Cinzel', serif;
+  
+}
+/* ID */
+#div-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 98vh;
+}
+
+#btn-greeting {
+  display: none;
+}
+
+#btn-quote, #btn-todo {
+  color: black;
+  font-size: 1.2rem;
+}
+
+#change-quote {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+}
+
+#div-form-quote {
+  width: 15vw;
+}
+
+#div-quote {
+  position: absolute;
+  bottom: 1%;
+  display: none;
+  text-align: center;
+}
+
+#div-todo {
+  display: none;
+  position: absolute;
+  height: 200px;
+  overflow: auto;
+  left: 1%;
+  bottom: 1%;
+  width: 15vw;
+}
+
+#div-form-quote {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 200px;
+  overflow: auto;
+  right: 1%;
+  bottom: 1%;
+  display: none;
+}
+
+#div-name {
+  background-color: black;
+  padding: 40px;
+}
+
+#div-p-prio {
+  min-width: 24vw;
+  text-align: center;
+  padding: .7em;
+}
+
+#form-greeting {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 30vw;
+}
+
+#img-close, #img-close-quote {
+  position: absolute;
+  left: 90%;
+  top: 5%;
+  cursor: pointer;
+}
+
+#img-open {
+  left: 1%;
+  bottom: 1%;
+}
+
+#img-quote {
+  right: 1%;
+  bottom: 1%;
+}
+
+#input-quote, #input-todo {
+  width: 12vw;
+  margin-top: 0;
+}
+
+#label-greeting {
+  font-size: 1.6rem;
+}
+
+#p-prio {
+  font-size: 1.3rem;
+}
+
+#quote {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+
+/* Class */
+.clock {
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  color: #fff;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.scroll {
+  background: url('https://www.transparenttextures.com/patterns/paper-fibers.png'), #fdf6e3;
+  color: #5b4636;
+  font-family: 'Cinzel', serif;
+  padding: 40px 20px;
+  width: 90%;
+  border-top: 10px solid #c2b280;
+  border-bottom: 10px solid #c2b280;
+  border-radius: 20px/60px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  background-blend-mode: multiply;
+}
+
+.centerdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+}
+ 
+.btn-side {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.inputs {
+  background: url('https://www.transparenttextures.com/patterns/paper-fibers.png'), #fdf6e3;
+  background-blend-mode: multiply;
+  color: #5b4636;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+
+  padding: 0.75em 1em;
+  width: 100%;
+  width: 25vw; 
+  box-sizing: border-box;
+
+  border: 2px solid #c2b280;
+  border-radius: 10px;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.1);
+
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+
+  margin: 0 auto;
+  /* display: block; */
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) { 
+  /* ID */
+
+  #clock {
+    position: absolute;
+    top: 10%;
+  }
+
+  #div-form-quote {
+    position: absolute;
+    right: 15%;
+    bottom: 20%;
+    width: 60vw;
+  }
+
+  #div-greeting {
+    position: absolute;
+    top: 25%;
+  }
+
+  #div-p-prio {
+  min-width: 60vw;
+  text-align: center;
+  padding: .7em;
+}
+
+  #div-prio {
+    position: absolute;
+    top: 33%;
+  }
+
+  #div-quote {
+    margin-bottom: 10px;
+  }
+
+  #div-todo {
+    position: absolute;
+    left: 15%;
+    bottom: 20%;
+    width: 60vw;
+  }
+
+  #form-greeting {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 80vw;
+  }
+
+  #img-quote {
+    position: absolute;
+    right: 38%;
+    bottom: 2.5%;
+  }
+
+  #img-open {
+    position: absolute;
+    left: 38%;
+    bottom: 2.5%;
+  }
+
+  #input-prio::placeholder {
+    font-size: .8rem;
+  }
+
+  #input-quote, #input-todo {
+    width: 53vw;
+    margin-top: 0;
+  }
+
+  #label-greeting {
+    font-size: 1.2rem;
+  }
+
+  /* CLASS */
+
+  .inputs {
+    width: 80vw
+  }
+
+  .btn-side {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { 
+  /* ID */
+
+  #clock {
+    position: absolute;
+    top: 10%;
+  }
+
+  #div-form-quote {
+    position: absolute;
+    right: 17.4%;
+    bottom: 20%;
+    width: 60vw;
+  }
+
+  #div-greeting {
+    position: absolute;
+    top: 25%;
+  }
+
+  #div-p-prio {
+  min-width: 60vw;
+  text-align: center;
+  padding: .7em;
+}
+
+  #div-prio {
+    position: absolute;
+    top: 33%;
+  }
+
+  #div-quote {
+    margin-bottom: 10px;
+  }
+
+  #div-todo {
+    position: absolute;
+    left: 17.4%;
+    bottom: 20%;
+    width: 60vw;
+  }
+
+  #form-greeting {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 80vw;
+  }
+
+  #img-quote {
+    position: absolute;
+    right: 38%;
+    bottom: 2.5%;
+  }
+
+  #img-open {
+    position: absolute;
+    left: 38%;
+    bottom: 2.5%;
+  }
+
+  #input-prio {
+    width: 50vw;
+  }
+
+  #input-prio::placeholder {
+    font-size: .8rem;
+  }
+
+  #input-quote, #input-todo {
+    width: 53vw;
+    margin-top: 0;
+  }
+
+  #label-greeting {
+    font-size: 1.2rem;
+  }
+
+  /* CLASS */
+
+  .inputs {
+    width: 80vw
+  }
+
+  .btn-side {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+}
+}
